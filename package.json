@@ -1,13 +1,52 @@
 {
-	"name": "vsc-extension-samples",
-	"publisher": "Microsoft",
+	"name": "cn-lsp-client",
+	"description": "Reference LSP Client for CN",
+	"author": "Dhruv Makwana",
+	"license": "MIT",
 	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rems-project/cn-lsp-client"
+	},
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^7.0.0"
+	},
+	"activationEvents": [
+		"onLanguage:c"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"customEditors": [
+			{
+				"viewType": "htmlpreview.editor",
+				"displayName": "HTML Preview",
+				"selector": [
+					{
+						"filenamePattern": "*.cn-state"
+					}
+				]
+			}
+		]
+	},
 	"scripts": {
-		"compile": "node .scripts/run-script.js compile",
-		"lint": "node .scripts/run-script.js lint",
-		"install": "node .scripts/run-command.js npm install",
-		"auditFix": "node .scripts/run-command.js npm audit fix",
-		"update-readme": "node .scripts/update-readme.js",
-		"update-lsif": "node .scripts/update-lsif.js"
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -b",
+		"watch": "tsc -b -w",
+		"lint": "eslint ./src --ext .ts,.tsx",
+		"test": "sh ./scripts/e2e.sh"
+	},
+	"devDependencies": {
+		"@types/mocha": "^8.2.2",
+		"@types/node": "^16.11.6",
+		"@types/vscode": "^1.52.0",
+		"@typescript-eslint/eslint-plugin": "^4.23.0",
+		"@typescript-eslint/parser": "^4.23.0",
+		"@vscode/test-electron": "^1.6.1",
+		"eslint": "^7.26.0",
+		"mocha": "^8.3.2",
+		"typescript": "^4.3.5"
 	}
 }

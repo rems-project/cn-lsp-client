@@ -1,7 +1,8 @@
 {
 	"editor.insertSpaces": false,
-	"prettier.semi": true,
-	"prettier.printWidth": 92,
-	"prettier.singleQuote": true,
-	"prettier.useTabs": true
+	"typescript.tsc.autoDetect": "off",
+	"typescript.preferences.quoteStyle": "single",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }
