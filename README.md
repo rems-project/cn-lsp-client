@@ -12,6 +12,15 @@ A reference implementation of a CN LSP client, as a [VS Code](https://code.visua
 - Run the launch config.
 - In the [Extension Development Host] instance of VSCode, open a C document of your choice.
 
+# Funding
+
+This software was developed by the University of Cambridge Computer
+Laboratory as part of the Rigorous Engineering of Mainstream Systems
+(REMS) project.
+
+This project has been partly funded by an EPSRC Doctoral Training studentship.
+This project has been partly funded by Google.
+
 # History
 
 The initial implementation of this VS Code extension and tests was taken from
