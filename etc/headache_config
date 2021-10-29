@@ -1,0 +1,6 @@
+# Typescript
+| ".*\\.ts"      -> frame open:"/*" line:"*" close:"*/"
+# Shell
+| ".*\\.sh"      -> frame open:"#"  line:"#" close:"#"
+# Misc
+| ".*Makefile.*" -> frame open:"#"  line:"#" close:"#"

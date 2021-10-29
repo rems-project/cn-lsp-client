@@ -4,7 +4,7 @@ A reference implementation of a CN LSP client, as a [VS Code](https://code.visua
 
 ## Installation
 
-- Run `npm install` in this folder. This installs all necessary npm modules in both the client and server folder
+- Run `npm install` in this folder. This installs all necessary npm modules.
 - Open VS Code on this folder.
 - Press Ctrl+Shift+B to compile the client.
 - Switch to the Debug viewlet.
@@ -21,8 +21,3 @@ Laboratory as part of the Rigorous Engineering of Mainstream Systems
 This project has been partly funded by an EPSRC Doctoral Training studentship.
 This project has been partly funded by Google.
 
-## History
-
-The initial implementation of this VS Code extension and tests was taken from
-the [VS Code LSP Sample
-Client](https://github.com/microsoft/vscode-extension-samples/tree/main/lsp-sample/client/).
